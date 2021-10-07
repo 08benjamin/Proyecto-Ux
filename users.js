@@ -6,12 +6,17 @@ module.exports = ()=>{
     var auxIdAccounts = 1;
     var auxIdBanks = 1;
     var auxAddIdBanks = 0;
+
+    var auxIdTransfer = 1;
     
     for(let i = 1; i<totalUsers+1; i++){
         data.users.push({
             id: i,
             name: `Usuario ${i}`,
-            bankId: auxIdBanks,
+            bank: {
+              "id": auxIdBanks,
+              name: `Banco ${auxIdBanks}`,
+            },
             "accounts": [
                 {
                   "id": auxIdAccounts,
@@ -24,8 +29,21 @@ module.exports = ()=>{
                   "balance": 200000
                 }
               ],
+              "tranfers":[
+                {
+                  "id": auxIdTransfer,
+                  "amount": 2500,
+                  "idDestino": 1
+                },
+                {
+                  "id": auxIdTransfer + 1,
+                  "amount": 200,
+                  "idDestino": 1
+                }
+              ]
         });
         auxIdAccounts = auxIdAccounts + 2;
+        auxIdTransfer = auxIdTransfer + 2;
 
         auxAddIdBanks = auxAddIdBanks + 1;
         if(auxAddIdBanks%10 == 0){
