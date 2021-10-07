@@ -3,26 +3,34 @@ module.exports = ()=>{
         users:[]
     }
     const totalUsers = 70;
-    var aux = 1
-    for(let i = 1; i<totalUsers; i++){
+    var auxIdAccounts = 1;
+    var auxIdBanks = 1;
+    var auxAddIdBanks = 0;
+    
+    for(let i = 1; i<totalUsers+1; i++){
         data.users.push({
             id: i,
             name: `Usuario ${i}`,
-            bankId: 1,
+            bankId: auxIdBanks,
             "accounts": [
                 {
-                  "id": aux,
+                  "id": auxIdAccounts,
                   "type": "Corriente",
                   "balance": 1500000
                 },
                 {
-                  "id": aux + 1,
+                  "id": auxIdAccounts + 1,
                   "type": "Vista",
                   "balance": 200000
                 }
               ],
         });
-        aux = aux + 2;
+        auxIdAccounts = auxIdAccounts + 2;
+
+        auxAddIdBanks = auxAddIdBanks + 1;
+        if(auxAddIdBanks%10 == 0){
+          auxIdBanks = auxIdBanks + 1;
+        }
     }
     return data;
 }
