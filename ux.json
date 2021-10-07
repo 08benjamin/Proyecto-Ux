@@ -1,18 +1,1343 @@
 {
-    "getBanks":[{
-        "lenght": 1 , "banks" :[{
-            "id": 1,
-            "name": "banks ux" 
-        }]
-    }],
-    "getCurrency":[{
-
-    }],
-    "posts": [
-      { "id": 1, "title": "json-server", "author": "typicode" }
-    ],
-    "comments": [
-      { "id": 1, "body": "some comment", "postId": 1 }
-    ],
-    "profile": { "name": "typicode" }
+  "getBanks": [
+    {
+      "lenght": 1,
+      "banks": [
+        {
+          "id": 1,
+          "name": "banks ux"
+        }
+      ]
+    }
+  ],
+  "Bank": [
+    {
+      "id": 1,
+      "name": "Banco 1",
+      "country": "Chile",
+      "clients": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Banco 2",
+      "country": "Chile",
+      "clients": [
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Banco 3",
+      "country": "Chile",
+      "clients": [
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Banco 4",
+      "country": "Chile",
+      "clients": [
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Banco 5",
+      "country": "Chile",
+      "clients": [
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Banco 6",
+      "country": "Chile",
+      "clients": [
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Banco 7",
+      "country": "Chile",
+      "clients": [
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70
+      ]
+    }
+  ],
+  "User": [
+    {
+      "id": 1,
+      "name": "Usuario 1",
+      "bankId": 1,
+      "accounts": [
+        {
+          "id": 1,
+          "type": "Corriente",
+          "balance": 1500000
+        },
+        {
+          "id": 2,
+          "type": "Vista",
+          "balance": 200000
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Usuario 2",
+      "bankId": 1,
+      "accounts": [
+        {
+          "id": 3,
+          "type": "Corriente",
+          "balance": 1500000
+        },
+        {
+          "id": 4,
+          "type": "Vista",
+          "balance": 200000
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Usuario 3",
+      "bankId": 1,
+      "accounts": [
+        {
+          "id": 5,
+          "type": "Corriente",
+          "balance": 1500000
+        },
+        {
+          "id": 6,
+          "type": "Vista",
+          "balance": 200000
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Usuario 4",
+      "bankId": 1,
+      "accounts": [
+        {
+          "id": 7,
+          "type": "Corriente",
+          "balance": 1500000
+        },
+        {
+          "id": 8,
+          "type": "Vista",
+          "balance": 200000
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Usuario 5",
+      "bankId": 1,
+      "accounts": [
+        {
+          "id": 9,
+          "type": "Corriente",
+          "balance": 1500000
+        },
+        {
+          "id": 10,
+          "type": "Vista",
+          "balance": 200000
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Usuario 6",
+      "bankId": 1,
+      "accounts": [
+        {
+          "id": 11,
+          "type": "Corriente",
+          "balance": 1500000
+        },
+        {
+          "id": 12,
+          "type": "Vista",
+          "balance": 200000
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Usuario 7",
+      "bankId": 1,
+      "accounts": [
+        {
+          "id": 13,
+          "type": "Corriente",
+          "balance": 1500000
+        },
+        {
+          "id": 14,
+          "type": "Vista",
+          "balance": 200000
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Usuario 8",
+      "bankId": 1,
+      "accounts": [
+        {
+          "id": 15,
+          "type": "Corriente",
+          "balance": 1500000
+        },
+        {
+          "id": 16,
+          "type": "Vista",
+          "balance": 200000
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Usuario 9",
+      "bankId": 1,
+      "accounts": [
+        {
+          "id": 17,
+          "type": "Corriente",
+          "balance": 1500000
+        },
+        {
+          "id": 18,
+          "type": "Vista",
+          "balance": 200000
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Usuario 10",
+      "bankId": 1,
+      "accounts": [
+        {
+          "id": 19,
+          "type": "Corriente",
+          "balance": 1500000
+        },
+        {
+          "id": 20,
+          "type": "Vista",
+          "balance": 200000
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "name": "Usuario 11",
+      "bankId": 1,
+      "accounts": [
+        {
+          "id": 21,
+          "type": "Corriente",
+          "balance": 1500000
+        },
+        {
+          "id": 22,
+          "type": "Vista",
+          "balance": 200000
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "name": "Usuario 12",
+      "bankId": 1,
+      "accounts": [
+        {
+          "id": 23,
+          "type": "Corriente",
+          "balance": 1500000
+        },
+        {
+          "id": 24,
+          "type": "Vista",
+          "balance": 200000
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "name": "Usuario 13",
+      "bankId": 1,
+      "accounts": [
+        {
+          "id": 25,
+          "type": "Corriente",
+          "balance": 1500000
+        },
+        {
+          "id": 26,
+          "type": "Vista",
+          "balance": 200000
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "name": "Usuario 14",
+      "bankId": 1,
+      "accounts": [
+        {
+          "id": 27,
+          "type": "Corriente",
+          "balance": 1500000
+        },
+        {
+          "id": 28,
+          "type": "Vista",
+          "balance": 200000
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "name": "Usuario 15",
+      "bankId": 1,
+      "accounts": [
+        {
+          "id": 29,
+          "type": "Corriente",
+          "balance": 1500000
+        },
+        {
+          "id": 30,
+          "type": "Vista",
+          "balance": 200000
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "name": "Usuario 16",
+      "bankId": 1,
+      "accounts": [
+        {
+          "id": 31,
+          "type": "Corriente",
+          "balance": 1500000
+        },
+        {
+          "id": 32,
+          "type": "Vista",
+          "balance": 200000
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "name": "Usuario 17",
+      "bankId": 1,
+      "accounts": [
+        {
+          "id": 33,
+          "type": "Corriente",
+          "balance": 1500000
+        },
+        {
+          "id": 34,
+          "type": "Vista",
+          "balance": 200000
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "name": "Usuario 18",
+      "bankId": 1,
+      "accounts": [
+        {
+          "id": 35,
+          "type": "Corriente",
+          "balance": 1500000
+        },
+        {
+          "id": 36,
+          "type": "Vista",
+          "balance": 200000
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "name": "Usuario 19",
+      "bankId": 1,
+      "accounts": [
+        {
+          "id": 37,
+          "type": "Corriente",
+          "balance": 1500000
+        },
+        {
+          "id": 38,
+          "type": "Vista",
+          "balance": 200000
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "name": "Usuario 20",
+      "bankId": 1,
+      "accounts": [
+        {
+          "id": 39,
+          "type": "Corriente",
+          "balance": 1500000
+        },
+        {
+          "id": 40,
+          "type": "Vista",
+          "balance": 200000
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "name": "Usuario 21",
+      "bankId": 1,
+      "accounts": [
+        {
+          "id": 41,
+          "type": "Corriente",
+          "balance": 1500000
+        },
+        {
+          "id": 42,
+          "type": "Vista",
+          "balance": 200000
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "name": "Usuario 22",
+      "bankId": 1,
+      "accounts": [
+        {
+          "id": 43,
+          "type": "Corriente",
+          "balance": 1500000
+        },
+        {
+          "id": 44,
+          "type": "Vista",
+          "balance": 200000
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "name": "Usuario 23",
+      "bankId": 1,
+      "accounts": [
+        {
+          "id": 45,
+          "type": "Corriente",
+          "balance": 1500000
+        },
+        {
+          "id": 46,
+          "type": "Vista",
+          "balance": 200000
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "name": "Usuario 24",
+      "bankId": 1,
+      "accounts": [
+        {
+          "id": 47,
+          "type": "Corriente",
+          "balance": 1500000
+        },
+        {
+          "id": 48,
+          "type": "Vista",
+          "balance": 200000
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "name": "Usuario 25",
+      "bankId": 1,
+      "accounts": [
+        {
+          "id": 49,
+          "type": "Corriente",
+          "balance": 1500000
+        },
+        {
+          "id": 50,
+          "type": "Vista",
+          "balance": 200000
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "name": "Usuario 26",
+      "bankId": 1,
+      "accounts": [
+        {
+          "id": 51,
+          "type": "Corriente",
+          "balance": 1500000
+        },
+        {
+          "id": 52,
+          "type": "Vista",
+          "balance": 200000
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "name": "Usuario 27",
+      "bankId": 1,
+      "accounts": [
+        {
+          "id": 53,
+          "type": "Corriente",
+          "balance": 1500000
+        },
+        {
+          "id": 54,
+          "type": "Vista",
+          "balance": 200000
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "name": "Usuario 28",
+      "bankId": 1,
+      "accounts": [
+        {
+          "id": 55,
+          "type": "Corriente",
+          "balance": 1500000
+        },
+        {
+          "id": 56,
+          "type": "Vista",
+          "balance": 200000
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "name": "Usuario 29",
+      "bankId": 1,
+      "accounts": [
+        {
+          "id": 57,
+          "type": "Corriente",
+          "balance": 1500000
+        },
+        {
+          "id": 58,
+          "type": "Vista",
+          "balance": 200000
+        }
+      ]
+    },
+    {
+      "id": 30,
+      "name": "Usuario 30",
+      "bankId": 1,
+      "accounts": [
+        {
+          "id": 59,
+          "type": "Corriente",
+          "balance": 1500000
+        },
+        {
+          "id": 60,
+          "type": "Vista",
+          "balance": 200000
+        }
+      ]
+    },
+    {
+      "id": 31,
+      "name": "Usuario 31",
+      "bankId": 1,
+      "accounts": [
+        {
+          "id": 61,
+          "type": "Corriente",
+          "balance": 1500000
+        },
+        {
+          "id": 62,
+          "type": "Vista",
+          "balance": 200000
+        }
+      ]
+    },
+    {
+      "id": 32,
+      "name": "Usuario 32",
+      "bankId": 1,
+      "accounts": [
+        {
+          "id": 63,
+          "type": "Corriente",
+          "balance": 1500000
+        },
+        {
+          "id": 64,
+          "type": "Vista",
+          "balance": 200000
+        }
+      ]
+    },
+    {
+      "id": 33,
+      "name": "Usuario 33",
+      "bankId": 1,
+      "accounts": [
+        {
+          "id": 65,
+          "type": "Corriente",
+          "balance": 1500000
+        },
+        {
+          "id": 66,
+          "type": "Vista",
+          "balance": 200000
+        }
+      ]
+    },
+    {
+      "id": 34,
+      "name": "Usuario 34",
+      "bankId": 1,
+      "accounts": [
+        {
+          "id": 67,
+          "type": "Corriente",
+          "balance": 1500000
+        },
+        {
+          "id": 68,
+          "type": "Vista",
+          "balance": 200000
+        }
+      ]
+    },
+    {
+      "id": 35,
+      "name": "Usuario 35",
+      "bankId": 1,
+      "accounts": [
+        {
+          "id": 69,
+          "type": "Corriente",
+          "balance": 1500000
+        },
+        {
+          "id": 70,
+          "type": "Vista",
+          "balance": 200000
+        }
+      ]
+    },
+    {
+      "id": 36,
+      "name": "Usuario 36",
+      "bankId": 1,
+      "accounts": [
+        {
+          "id": 71,
+          "type": "Corriente",
+          "balance": 1500000
+        },
+        {
+          "id": 72,
+          "type": "Vista",
+          "balance": 200000
+        }
+      ]
+    },
+    {
+      "id": 37,
+      "name": "Usuario 37",
+      "bankId": 1,
+      "accounts": [
+        {
+          "id": 73,
+          "type": "Corriente",
+          "balance": 1500000
+        },
+        {
+          "id": 74,
+          "type": "Vista",
+          "balance": 200000
+        }
+      ]
+    },
+    {
+      "id": 38,
+      "name": "Usuario 38",
+      "bankId": 1,
+      "accounts": [
+        {
+          "id": 75,
+          "type": "Corriente",
+          "balance": 1500000
+        },
+        {
+          "id": 76,
+          "type": "Vista",
+          "balance": 200000
+        }
+      ]
+    },
+    {
+      "id": 39,
+      "name": "Usuario 39",
+      "bankId": 1,
+      "accounts": [
+        {
+          "id": 77,
+          "type": "Corriente",
+          "balance": 1500000
+        },
+        {
+          "id": 78,
+          "type": "Vista",
+          "balance": 200000
+        }
+      ]
+    },
+    {
+      "id": 40,
+      "name": "Usuario 40",
+      "bankId": 1,
+      "accounts": [
+        {
+          "id": 79,
+          "type": "Corriente",
+          "balance": 1500000
+        },
+        {
+          "id": 80,
+          "type": "Vista",
+          "balance": 200000
+        }
+      ]
+    },
+    {
+      "id": 41,
+      "name": "Usuario 41",
+      "bankId": 1,
+      "accounts": [
+        {
+          "id": 81,
+          "type": "Corriente",
+          "balance": 1500000
+        },
+        {
+          "id": 82,
+          "type": "Vista",
+          "balance": 200000
+        }
+      ]
+    },
+    {
+      "id": 42,
+      "name": "Usuario 42",
+      "bankId": 1,
+      "accounts": [
+        {
+          "id": 83,
+          "type": "Corriente",
+          "balance": 1500000
+        },
+        {
+          "id": 84,
+          "type": "Vista",
+          "balance": 200000
+        }
+      ]
+    },
+    {
+      "id": 43,
+      "name": "Usuario 43",
+      "bankId": 1,
+      "accounts": [
+        {
+          "id": 85,
+          "type": "Corriente",
+          "balance": 1500000
+        },
+        {
+          "id": 86,
+          "type": "Vista",
+          "balance": 200000
+        }
+      ]
+    },
+    {
+      "id": 44,
+      "name": "Usuario 44",
+      "bankId": 1,
+      "accounts": [
+        {
+          "id": 87,
+          "type": "Corriente",
+          "balance": 1500000
+        },
+        {
+          "id": 88,
+          "type": "Vista",
+          "balance": 200000
+        }
+      ]
+    },
+    {
+      "id": 45,
+      "name": "Usuario 45",
+      "bankId": 1,
+      "accounts": [
+        {
+          "id": 89,
+          "type": "Corriente",
+          "balance": 1500000
+        },
+        {
+          "id": 90,
+          "type": "Vista",
+          "balance": 200000
+        }
+      ]
+    },
+    {
+      "id": 46,
+      "name": "Usuario 46",
+      "bankId": 1,
+      "accounts": [
+        {
+          "id": 91,
+          "type": "Corriente",
+          "balance": 1500000
+        },
+        {
+          "id": 92,
+          "type": "Vista",
+          "balance": 200000
+        }
+      ]
+    },
+    {
+      "id": 47,
+      "name": "Usuario 47",
+      "bankId": 1,
+      "accounts": [
+        {
+          "id": 93,
+          "type": "Corriente",
+          "balance": 1500000
+        },
+        {
+          "id": 94,
+          "type": "Vista",
+          "balance": 200000
+        }
+      ]
+    },
+    {
+      "id": 48,
+      "name": "Usuario 48",
+      "bankId": 1,
+      "accounts": [
+        {
+          "id": 95,
+          "type": "Corriente",
+          "balance": 1500000
+        },
+        {
+          "id": 96,
+          "type": "Vista",
+          "balance": 200000
+        }
+      ]
+    },
+    {
+      "id": 49,
+      "name": "Usuario 49",
+      "bankId": 1,
+      "accounts": [
+        {
+          "id": 97,
+          "type": "Corriente",
+          "balance": 1500000
+        },
+        {
+          "id": 98,
+          "type": "Vista",
+          "balance": 200000
+        }
+      ]
+    },
+    {
+      "id": 50,
+      "name": "Usuario 50",
+      "bankId": 1,
+      "accounts": [
+        {
+          "id": 99,
+          "type": "Corriente",
+          "balance": 1500000
+        },
+        {
+          "id": 100,
+          "type": "Vista",
+          "balance": 200000
+        }
+      ]
+    },
+    {
+      "id": 51,
+      "name": "Usuario 51",
+      "bankId": 1,
+      "accounts": [
+        {
+          "id": 101,
+          "type": "Corriente",
+          "balance": 1500000
+        },
+        {
+          "id": 102,
+          "type": "Vista",
+          "balance": 200000
+        }
+      ]
+    },
+    {
+      "id": 52,
+      "name": "Usuario 52",
+      "bankId": 1,
+      "accounts": [
+        {
+          "id": 103,
+          "type": "Corriente",
+          "balance": 1500000
+        },
+        {
+          "id": 104,
+          "type": "Vista",
+          "balance": 200000
+        }
+      ]
+    },
+    {
+      "id": 53,
+      "name": "Usuario 53",
+      "bankId": 1,
+      "accounts": [
+        {
+          "id": 105,
+          "type": "Corriente",
+          "balance": 1500000
+        },
+        {
+          "id": 106,
+          "type": "Vista",
+          "balance": 200000
+        }
+      ]
+    },
+    {
+      "id": 54,
+      "name": "Usuario 54",
+      "bankId": 1,
+      "accounts": [
+        {
+          "id": 107,
+          "type": "Corriente",
+          "balance": 1500000
+        },
+        {
+          "id": 108,
+          "type": "Vista",
+          "balance": 200000
+        }
+      ]
+    },
+    {
+      "id": 55,
+      "name": "Usuario 55",
+      "bankId": 1,
+      "accounts": [
+        {
+          "id": 109,
+          "type": "Corriente",
+          "balance": 1500000
+        },
+        {
+          "id": 110,
+          "type": "Vista",
+          "balance": 200000
+        }
+      ]
+    },
+    {
+      "id": 56,
+      "name": "Usuario 56",
+      "bankId": 1,
+      "accounts": [
+        {
+          "id": 111,
+          "type": "Corriente",
+          "balance": 1500000
+        },
+        {
+          "id": 112,
+          "type": "Vista",
+          "balance": 200000
+        }
+      ]
+    },
+    {
+      "id": 57,
+      "name": "Usuario 57",
+      "bankId": 1,
+      "accounts": [
+        {
+          "id": 113,
+          "type": "Corriente",
+          "balance": 1500000
+        },
+        {
+          "id": 114,
+          "type": "Vista",
+          "balance": 200000
+        }
+      ]
+    },
+    {
+      "id": 58,
+      "name": "Usuario 58",
+      "bankId": 1,
+      "accounts": [
+        {
+          "id": 115,
+          "type": "Corriente",
+          "balance": 1500000
+        },
+        {
+          "id": 116,
+          "type": "Vista",
+          "balance": 200000
+        }
+      ]
+    },
+    {
+      "id": 59,
+      "name": "Usuario 59",
+      "bankId": 1,
+      "accounts": [
+        {
+          "id": 117,
+          "type": "Corriente",
+          "balance": 1500000
+        },
+        {
+          "id": 118,
+          "type": "Vista",
+          "balance": 200000
+        }
+      ]
+    },
+    {
+      "id": 60,
+      "name": "Usuario 60",
+      "bankId": 1,
+      "accounts": [
+        {
+          "id": 119,
+          "type": "Corriente",
+          "balance": 1500000
+        },
+        {
+          "id": 120,
+          "type": "Vista",
+          "balance": 200000
+        }
+      ]
+    },
+    {
+      "id": 61,
+      "name": "Usuario 61",
+      "bankId": 1,
+      "accounts": [
+        {
+          "id": 121,
+          "type": "Corriente",
+          "balance": 1500000
+        },
+        {
+          "id": 122,
+          "type": "Vista",
+          "balance": 200000
+        }
+      ]
+    },
+    {
+      "id": 62,
+      "name": "Usuario 62",
+      "bankId": 1,
+      "accounts": [
+        {
+          "id": 123,
+          "type": "Corriente",
+          "balance": 1500000
+        },
+        {
+          "id": 124,
+          "type": "Vista",
+          "balance": 200000
+        }
+      ]
+    },
+    {
+      "id": 63,
+      "name": "Usuario 63",
+      "bankId": 1,
+      "accounts": [
+        {
+          "id": 125,
+          "type": "Corriente",
+          "balance": 1500000
+        },
+        {
+          "id": 126,
+          "type": "Vista",
+          "balance": 200000
+        }
+      ]
+    },
+    {
+      "id": 64,
+      "name": "Usuario 64",
+      "bankId": 1,
+      "accounts": [
+        {
+          "id": 127,
+          "type": "Corriente",
+          "balance": 1500000
+        },
+        {
+          "id": 128,
+          "type": "Vista",
+          "balance": 200000
+        }
+      ]
+    },
+    {
+      "id": 65,
+      "name": "Usuario 65",
+      "bankId": 1,
+      "accounts": [
+        {
+          "id": 129,
+          "type": "Corriente",
+          "balance": 1500000
+        },
+        {
+          "id": 130,
+          "type": "Vista",
+          "balance": 200000
+        }
+      ]
+    },
+    {
+      "id": 66,
+      "name": "Usuario 66",
+      "bankId": 1,
+      "accounts": [
+        {
+          "id": 131,
+          "type": "Corriente",
+          "balance": 1500000
+        },
+        {
+          "id": 132,
+          "type": "Vista",
+          "balance": 200000
+        }
+      ]
+    },
+    {
+      "id": 67,
+      "name": "Usuario 67",
+      "bankId": 1,
+      "accounts": [
+        {
+          "id": 133,
+          "type": "Corriente",
+          "balance": 1500000
+        },
+        {
+          "id": 134,
+          "type": "Vista",
+          "balance": 200000
+        }
+      ]
+    },
+    {
+      "id": 68,
+      "name": "Usuario 68",
+      "bankId": 1,
+      "accounts": [
+        {
+          "id": 135,
+          "type": "Corriente",
+          "balance": 1500000
+        },
+        {
+          "id": 136,
+          "type": "Vista",
+          "balance": 200000
+        }
+      ]
+    },
+    {
+      "id": 69,
+      "name": "Usuario 69",
+      "bankId": 1,
+      "accounts": [
+        {
+          "id": 137,
+          "type": "Corriente",
+          "balance": 1500000
+        },
+        {
+          "id": 138,
+          "type": "Vista",
+          "balance": 200000
+        }
+      ]
+    },
+    {
+      "name": "Carlos Perez",
+      "bankId": 7,
+      "accounts": [
+        {
+          "id": 139,
+          "type": "Corriente",
+          "balance": 1000
+        },
+        {
+          "id": 140,
+          "type": "Vista",
+          "balance": 500
+        }
+      ],
+      "id": 70
+    }
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
 }

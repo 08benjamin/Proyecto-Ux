@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "json-server --watch ux.json"
+    "start": "json-server --watch ux.json --port 3001",
+    "fakeUsers": "json-server --watch users.js --port 3001",
+    "fakeBanks": "json-server --watch banks.js --port 3001"
   },
   "author": "",
   "license": "ISC",
